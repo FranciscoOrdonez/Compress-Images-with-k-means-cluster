@@ -4,7 +4,8 @@ With the high demand on pictures through the internet, there is a need to compre
 Image Compression with k-means cluster is a way to compress an image from a 24 bit color presentation to a 4 bit, if we use a 16 color cluster.  Images comes with an RGB encoding that has 3 - 8 bit unsigned integer, from 0 to 255, which specifies red, green and blue intensity values.  The matrix for an RGB encoding is 128 x 128 x 3(three color intensity).  Every pixel is a data example, so,in a picture with 128 x 128 there is 16284 pixel, and each pixel has a three - 8 bit integer representing the colors.
 With k-means algorithm, we could compress to into a 4 bit color that best group(cluster) the pixels.  
 
-Approach
+Approach:
+
 We are using two approaches for compression, one creating our own functions and other using Matlab functions.  Both approaches get a similar picture quality.  
 First Approach: Our own functions (copywrite from Cousera Stanford University Machine Learning by Andrew Ng) with some changes:
 1. load image into an 3 dimensional  array (example: 128 x 128 x 3)
