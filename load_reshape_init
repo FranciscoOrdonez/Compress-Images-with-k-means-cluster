@@ -21,3 +21,14 @@ K = 16;
 maxIter = 10;
 
 % get the first clusters randomly.
+% first initiatize matrix centroids to zeros with dimensiones K x size(X,2) 
+centroids = zeros(K, size(X, 2));
+
+%Randomly reorder the indicies of examples. Creates a matri randidx with the size of m=number of data points,
+%with a number from 1 to m randomly.... for example is X has 400 data points, then creates randomly numbers indistinctly from 1 to 400
+like [201  2  156 .....]
+randidx = randperm(size(X,1));
+
+% Take the first K examples from de randidx matrix and put the values of X corresponding to the first K values of randidex.
+%example:  if randidx has [201 2 156 ...] and X(201) = (0.1 0.2), X(2) = (0.3 0.40) and X(156) = (0.5 0.6) then centroids are (0.1 0.2; 0.3 0.4; 0.5 0.6)
+centroids = X(randidx(1:K),:);
