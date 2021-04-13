@@ -1,4 +1,8 @@
 function idx = findClosestCentroids(X, centroids)
+
+%This function takes the data matrix X and the locations of all centroids inside centroids
+%and should output a one-dimensional array idx that holds the index
+%(a value in , where  is total number of centroids) of the closest centroid to every training example. 
 %FINDCLOSESTCENTROIDS computes the centroid memberships for every example
 %   idx = FINDCLOSESTCENTROIDS (X, centroids) returns the closest centroids
 %   in idx for a dataset X where each row is a single example. idx = m x 1 
