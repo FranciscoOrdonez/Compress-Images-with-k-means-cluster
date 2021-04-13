@@ -9,12 +9,12 @@ Approach:
 We are using two approaches for compression, one creating our own functions and other using Matlab functions.  Both approaches get a similar picture quality.  
 First Approach: Our own functions (copywrite from Cousera Stanford University Machine Learning by Andrew Ng) with some changes:
 1. load image into an 3 dimensional  array (example: 128 x 128 x 3)
-2. reshape into a 2 dimension array (example (16384  3)
+2. reshape into a 2 dimension array (example (16384 x 3)
 3. make array values from 0 to 1, dividing by 256 o 256x256 depending on the image structure
 4. random initiatization of initial centroids(clusters of groups)
-5. make a loop from 1 to maximum iterations you want (example = 10);
-6.        create vector m x 1 where m is the number of pixels, to assign each pixel to closest centroid
-7.        calculate new centroids (clusters or groups with vector on 6 above
+5. make a loop from 1 to maximum iterations you want (example = 10):
+6. ------create vector m x 1 where m is the number of pixels, to assign each pixel to closest centroid
+7. ------calculate new centroids (clusters or groups) with vector on 6 above
 8. find final centroid assigmments, vector m x 1
 9. reconstruct the image based on final centroid assigment on 8 above
 10. convert recovered image into initial dimensions (example: from 16384 x 3   to 128 x 128 x 3)
