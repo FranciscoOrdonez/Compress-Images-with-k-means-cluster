@@ -24,6 +24,8 @@ First Approach: Our own functions (copywrite from Cousera Stanford University Ma
 
 hese are few examples of compressed images-
 
+https://raw.githubusercontent.com/FranciscoOrdonez/Compress-Images-with-k-means-cluster/main/image-examples/flowers_org.JPG
+
 https://github.com/FranciscoOrdonez/Compress-Images-with-k-means-cluster/blob/main/image-examples/flowers_org.JPG
 https://github.com/FranciscoOrdonez/Compress-Images-with-k-means-cluster/blob/main/image-examples/flowers_org.JPG?raw=true
 
