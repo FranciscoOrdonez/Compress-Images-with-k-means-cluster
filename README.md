@@ -23,7 +23,8 @@ First Approach: Our own functions (copywrite from Cousera Stanford University Ma
 13. show picture size with 2,4,8, and 16 cluster (or colors) compared with original image.
 
 hese are few examples of compressed images-
-@<img src="https://user-images.githubusercontent.com/53232113/114751253-87eb7e00-9d1a-11eb-846d-c2312a78d2e4.JPG"  width="300" height="300">
+
+<img src="https://user-images.githubusercontent.com/53232113/114751253-87eb7e00-9d1a-11eb-846d-c2312a78d2e4.JPG"  width="300" height="300">
 
 
 
