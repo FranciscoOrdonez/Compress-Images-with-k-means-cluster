@@ -23,15 +23,9 @@ First Approach: Our own functions (copywrite from Cousera Stanford University Ma
 13. show picture size with 2,4,8, and 16 cluster (or colors) compared with original image.
 
 hese are few examples of compressed images-
-@<img src="https://user-images.githubusercontent.com/53232113/114753192-c8e49200-9d1c-11eb-957e-dbd571a4eccc.JPG"  width="100" height="100">
-@![flowers_org_dim](https://user-images.githubusercontent.com/53232113/114753192-c8e49200-9d1c-11eb-957e-dbd571a4eccc.JPG)
-
-![flowers_org](https://user-images.githubusercontent.com/53232113/114751253-87eb7e00-9d1a-11eb-846d-c2312a78d2e4.JPG)
+@<img src="https://user-images.githubusercontent.com/53232113/114751253-87eb7e00-9d1a-11eb-846d-c2312a78d2e4.JPG"  width="300" height="300">
 
 
-![comp_bird](https://user-images.githubusercontent.com/26625980/34304104-3fd54314-e75e-11e7-8812-c5e0d8bcf48d.png)
-
-![compressed](https://user-images.githubusercontent.com/26625980/34304124-5ef5de20-e75e-11e7-89c8-4d69bdfc1b27.png)
 
 
 
