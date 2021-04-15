@@ -16,6 +16,7 @@ replicates = 10;
 % Map the pixels to the centroids and convert to uint8
 Xcomp = C(idx,:);
 Acomp = uint8(reshape(Xcomp,size(A)));
+Acomp = Acomp/256;
 
 %function to convert a double matrix Mfile
 % into an image PngFile.jpg, write the image
