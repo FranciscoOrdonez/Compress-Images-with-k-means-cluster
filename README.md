@@ -28,6 +28,21 @@ Here, there are five pictures from left to right> original, 32, 16 ,8 and 4 comp
 <img src="https://user-images.githubusercontent.com/53232113/114751253-87eb7e00-9d1a-11eb-846d-c2312a78d2e4.JPG"  width="200" height="300"> <img src="https://user-images.githubusercontent.com/53232113/114776216-d9eecc80-9d37-11eb-9f64-04a24b9f5c20.jpg" width="200" height="300"><img src="https://user-images.githubusercontent.com/53232113/114785729-b67d4f00-9d42-11eb-9d20-107e708ea9b6.jpg" width="200" height="300"><img src="https://user-images.githubusercontent.com/53232113/114786526-dd885080-9d43-11eb-9adc-27c60c3cbb63.jpg" width="200" height="300"><img src="https://user-images.githubusercontent.com/53232113/114788600-5dfc8080-9d47-11eb-9087-b7127815f5b2.jpg" width="200" height="300">
 <img src="https://user-images.githubusercontent.com/53232113/114796500-bd15c180-9d56-11eb-91d9-4b479d9f8ec9.jpg" width="1000" height="100">
 
+Observations
+1. it is a pretty bix pixel picture with almost 8 millon pixels
+2. for initial cluster it is used a xxxxx function. This function gets a random number from 0 to 1 in the vector matrix and gets the first K numbers. Every time the xxxxxx is run, gets different numbers.
+3. for each pixel, there is a IDX vector that point to the closest cluster.
+4. to find a new K clusters, the routine xxxxxx ...
+5. the program repeats 10 iterations until it finds the final IDX vector corresponding to final K clusters
+6. the final X_compressed matrix has [n x 1] dimensions where n is the number of pixels in the image.  Note that this matrix has the same size for any clusters, the difference is just the numbers on it. For example, if there is a 16 cluster group, there will be just 16 values on the matrix. The way to check is by using unique(X) where X is the compressed matrix.
+7. finally this matrix is converted from  a double matrix into an image PngFile.jpg, write the image  on disk, and finally  show image on screen. 
+
+Conclusions:
+1. the 32 cluster picture is very similar to the original and has almost half the size in kbytes, the 16, 8 and 4 cluster images, are not so clear and the sizes are very similar to the 32 cluster picture.
+2. With this particular image, the correct cluster to compress the size in almost half of the original is a 32 cluster grouping.
+
+
+
 
 
 
