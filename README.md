@@ -31,9 +31,9 @@ Here, there are five pictures from left to right> original, 32, 16 ,8 and 4 comp
 Observations
 1. it is a pretty bix pixel picture with almost 8 millon pixels
 2. for initial cluster it is used a xxxxx function. This function gets a random number from 0 to 1 in the vector matrix and gets the first K numbers. Every time the xxxxxx is run, gets different numbers.
-3. for each pixel, there is a IDX vector that point to the closest cluster.
-4. to find a new K clusters, the routine xxxxxx ...
-5. the program repeats 10 iterations until it finds the final IDX vector corresponding to final K clusters
+3. for each pixel, there is a IDX vector that point to the closest cluget centroids by finding all the data points for each centroid and getting the mean of all X ster. This is the assignment step where each data point is assigned to a cluster whose center is nearest to it.
+4. to find a new K clusters, the routine computeCentroids gets centroids by finding all the data points for each centroid and getting the mean of all  
+5. the assignmment step and update step, both,   repeat 10 iterations until it finds the final IDX vector corresponding to final K clusters
 6. the final X_compressed matrix has [n x 1] dimensions where n is the number of pixels in the image.  Note that this matrix has the same size for any clusters, the difference is just the numbers on it. For example, if there is a 16 cluster group, there will be just 16 values on the matrix. The way to check is by using unique(X) where X is the compressed matrix.
 7. finally this matrix is converted from  a double matrix into an image PngFile.jpg, write the image  on disk, and finally  show image on screen. 
 
