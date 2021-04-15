@@ -1,5 +1,5 @@
 % read the image into an A matrix 2448 x 3264 x 3
-A = imread('flower_org.JPG');
+A = imread('flowers_org.JPG');
 
 %convert a three dimension array into a two dimension array(  2448 x 4264 x 3  ... into a 7990272 x 3 array with type of numbers = double
 X = double(reshape(A(:),length(A(:))/3,3)); % X is a (128*128)x3 double matrix
