@@ -1,0 +1,17 @@
+function centroids = computeCentroids(X, idx, K)
+%first zeros the K x N centroids matrix
+%get centroids by finding all the data points for each centroid and getting the mean of all X 
+%do a for loop from 1 to K = number of clusters
+%return centroids matrix with a dimension of K x n where K = number of clusters and n=columns of matrix X
+
+
+% Useful variables
+[m n] = size(X);
+
+
+centroids = zeros(K, n);
+
+for i = 1:K
+      idx_i = find(idx==i);       %indexes of all the input which belongs to cluster j
+      centroids(i,:) = mean(X(idx_i,:)); % calculating mean using built-in function
+end
