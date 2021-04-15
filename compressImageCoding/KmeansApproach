@@ -11,7 +11,7 @@ k = 32
 replicates = 10;
 
 %use kmeans Matlab function
-[idx,C] = kmeans(X,k,'Replicates',replicates,'MaxIter',200);
+[idx,C] = kmeans(X,k,'Replicates',replicates,'MaxIter',10);
 
 % Map the pixels to the centroids and convert to uint8
 Xcomp = C(idx,:);
