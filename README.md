@@ -4,9 +4,11 @@ With the high demand on pictures through the internet, there is a need to compre
 Image Compression with k-means cluster is a way to compress an image from a 24 bit color presentation to a N bit for a 2^n color cluster.  Images comes with an RGB encoding that has 3 - 8 bit unsigned integer, from 0 to 255, which specifies red, green and blue intensity values.  The matrix for an RGB encoding is M(lines) x N(columns)  x 3(three color intensity).  Every pixel is a data example, so, for example, in a picture with 128 x 128 there is 16284 pixel, and each pixel has a three - 8 bit integer representing the colors.
 With k-means algorithm, we could compress to into a N bit color that best group(cluster) the pixels.  
 
+In this project, We will analyze two different algorithms for compressing images and, finally, demostrate the use of  scatter3 function, which plots in three dimensions the red-green-blue image color intensity. 
+
 Approach:
 
-We are using two approaches for compression, one with Coursera Standord Machine Learning Andrew Ng course code with some changes and other using Matlab internal functions.  Both approaches get a similar picture quality.  
+We are using two approaches for compression, one with Coursera Standord Machine Learning Andrew Ng course code with some changes and other using kmeans, a Matlab internal functions.  Both approaches get a similar picture quality.  
 
 First Approach: Coursera Stanford Machine Learning by Andrew Ng code with some changes:
 1. load image into an 3 dimensional  array (example: 2448 x 3264 x 3)
@@ -31,7 +33,7 @@ Here, there are five pictures from left to right> original, 32, 16 ,8 and 4 comp
 Observations
 1. it is a pretty bix pixel picture with almost 8 millon pixels
 2. for initial cluster it is used a randperm(m) function. This function gets a random number from 0 to m in the vector matrix, then gets the first K numbers. Every time the randperm function is run, gets different numbers.
-3. for each pixel, there is a IDX vector that point to the closest cluster centroids by finding all the data points for each centroid and getting the mean of all X ster. This is the assignment step where each data point is assigned to a cluster whose center is nearest to it.
+3. for each pixel, there is a IDX vector that point to the closest cluster centroids by finding all the data points for each centroid and getting the mean of all X data in ths cluster. This is the assignment step where each data point is assigned to a cluster whose center is nearest to it.
 4. to find a new K clusters, the routine computeCentroids gets centroids by finding all the data points for each centroid and getting the mean of all  
 5. the assignmment step and update step, both,   repeat 10 iterations until it finds the final IDX vector corresponding to final K clusters
 6. the final X_compressed matrix has [n x 1] dimensions where n is the number of pixels in the image.  Note that this matrix has the same size for any clusters, the difference is just the numbers on it. For example, if there is a 16 cluster group, there will be just 16 values on the matrix. The way to check is by using unique(X) where X is the compressed matrix.
@@ -42,7 +44,7 @@ Conclusions:
 2. With this particular image, the correct cluster to compress the size in almost half of the original is a 32 cluster grouping.
 3. in k-means cluster compression there is always a picture degradation and is necesary find the best compression with the least degradation.
 
-Second Approach: use 
+Second Approach: use kmeans, a Matlab internal function, for image compression
 
 
 
@@ -56,5 +58,7 @@ Second Approach: use
 
 
 
-Second Approach: using octave internal functions       
+
+
+  
 
