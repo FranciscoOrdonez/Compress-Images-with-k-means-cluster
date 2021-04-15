@@ -1,0 +1,49 @@
+function writeImageFile(Mfile,JpgFile)
+% function to convert a double matrix Mfile
+% into an image PngFile.jpg, write the image
+% on disk, and finally  show image on screen
+
+
+% create a string PngFile_complete with the name of 
+% the file Jpgfile with '.jpg'
+% Example in JpgFile = 'temp', then
+% JpgFile_complete = "temp.jpg'
+JpgFile_complete = append(JpgFile,'.jpg');
+
+% into a image png file PpjFile
+%to check, reads the pngfile  created
+%and prints the image
+
+%the Mfile comes with values from 0 to 1
+% need to create decimal number
+Mfile = Mfile * 255;
+
+%converts a matrix 128 x 128 x 3
+% into a matrix 49152 x 1 binary b
+%if Mfile([1],[1],[1]) = 213.3658 it converts
+% to b(1,:) into '11010101' which is 213 in binary
+b = dec2bin(Mfile);
+
+% convert de binary matrix into decimal numbers
+%example b(1,:) = '11010101'converts to 213
+% the matrix du is a 49152 x 1 matrix
+du = bin2dec(b);
+
+%convert a du matrix into the size of original
+% Mfile matrix
+%example: du matrix is 49152 x 1,
+% with convertion matrix du is 128 x 128 x 3
+% a matrix Mfile
+%example: before du .. du([1],[1]) = 213
+% after du... du([1],[1],[1]) = 213.. now with 
+% three dimensions
+du = reshape(du,size(Mfile));
+
+%write into disk the du matrix in a png file format
+imwrite(uint8(du),JpgFile_complete);
+
+% read the pngfile from disk and print the png image file into screen with
+% imagesc command
+figure;
+D = imread(JpgFile_complete);
+imagesc(D);
