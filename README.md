@@ -21,7 +21,7 @@ First Approach: Coursera Stanford Machine Learning by Andrew Ng code with some c
 10. convert recovered image into initial dimensions (example: from 16384 x 3   to 128 x 128 x 3)
 11. save image, write into disk and show image  .................................................. steps 9-11 writeImageFile(see CompressImageCoding)
 12. Do steps from 1 to 11 with cluster = 4,8,16,32
-13. show picture size with 4,8,16,32 cluster (or groups)  and compared with original image.
+13. show images: original and compare with 32,16,8,4 cluster images.
 
 Here, there are five pictures from left to right> original, 32, 16 ,8 and 4 compress cluster images:
 
