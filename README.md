@@ -46,6 +46,18 @@ Conclusions:
 
 Second Approach: use kmeans, a Matlab internal function, for image compression
 
+1. load image into an 3 dimensional  array (example: 2448 x 3264 x 3)
+2. reshape into a 2 dimension array (example (7990272 x 3)
+3. make array values from 0 to 1, dividing by 256 on the image structure
+4. initialize k=number of cluster, number of replicates until finding the best cluster
+5. use kmeans function and get as output the assignment vector idx and the centroid values
+6. convert recovered image into initial dimensions (example: from 7990272 x 3   to 2448 x 3264 x 3)
+7. save image, write into disk and show image
+8. Do steps from 1 to 7 with cluster = 4,8,16,32
+14. show images: original and compare with 32 centroids, 16 centroids, 8 centroids, and 4 centroids cluster images.
+
+Use 
+
 
 
 
