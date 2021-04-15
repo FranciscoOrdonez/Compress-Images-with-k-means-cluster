@@ -12,15 +12,15 @@ First Approach: Coursera Stanford Machine Learning by Andrew Ng code with some c
 1. load image into an 3 dimensional  array (example: 128 x 128 x 3)
 2. reshape into a 2 dimension array (example (16384 x 3)
 3. make array values from 0 to 1, dividing by 256 o 256x256 depending on the image structure
-4. random initiatization of initial centroids(clusters of groups)
+4. random initiatization of initial centroids(clusters of groups)................................ steps 1-4:  initCompress(see compressImageCoding)
 5. make a loop from 1 to maximum iterations you want (example = 10):
 6. ------create vector m x 1 where m is the number of pixels, to assign each pixel to closest centroid
-7. ------calculate new centroids (clusters or groups) with vector on 6 above
-8. find final centroid assigmments, vector m x 1
+7. ------calculate new centroids (clusters or groups) with vector on 6 above..................... steps 5=7:  CentroidLoop(see compressImageCoding)  .
+8. find final centroid assigmments, vector m x 1  ................................................   step 8:  findClosestCentroid(see CompressImageCoding)
 9. reconstruct the image based on final centroid assigment on 8 above
 10. convert recovered image into initial dimensions (example: from 16384 x 3   to 128 x 128 x 3)
-11. save image, write into disk and show image
-12. Do steps from 1 to 11 with cluster = 2,4,8, and 16
+11. save image, write into disk and show image  .................................................. steps 9-11 writeImageFile(see CompressImageCoding)
+12. Do steps from 1 to 11 with cluster = 4,8,16,32
 13. show picture size with 2,4,8, and 16 cluster (or colors) compared with original image.
 
 Here, there are five pictures from left to right> original, 32, 16 ,8 and 4 compress cluster images:
