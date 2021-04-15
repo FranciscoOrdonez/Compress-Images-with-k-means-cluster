@@ -21,7 +21,7 @@ First Approach: Coursera Stanford Machine Learning by Andrew Ng code with some c
 10. convert recovered image into initial dimensions (example: from 7990272 x 3   to 2448 x 3264 x 3)
 11. save image, write into disk and show image  .................................................. steps 9-11 writeImageFile(see CompressImageCoding)
 12. Do steps from 1 to 11 with cluster = 4,8,16,32
-13. show images: original and compare with 32,16,8,4 cluster images.
+13. show images: original and compare with 32 centroids, 16 centroids, 8 centroids, and 4 centroids cluster images.
 
 Here, there are five pictures from left to right> original, 32, 16 ,8 and 4 compress cluster images:
 
@@ -30,8 +30,8 @@ Here, there are five pictures from left to right> original, 32, 16 ,8 and 4 comp
 
 Observations
 1. it is a pretty bix pixel picture with almost 8 millon pixels
-2. for initial cluster it is used a xxxxx function. This function gets a random number from 0 to 1 in the vector matrix and gets the first K numbers. Every time the xxxxxx is run, gets different numbers.
-3. for each pixel, there is a IDX vector that point to the closest cluget centroids by finding all the data points for each centroid and getting the mean of all X ster. This is the assignment step where each data point is assigned to a cluster whose center is nearest to it.
+2. for initial cluster it is used a randperm(m) function. This function gets a random number from 0 to m in the vector matrix, then gets the first K numbers. Every time the randperm function is run, gets different numbers.
+3. for each pixel, there is a IDX vector that point to the closest cluster centroids by finding all the data points for each centroid and getting the mean of all X ster. This is the assignment step where each data point is assigned to a cluster whose center is nearest to it.
 4. to find a new K clusters, the routine computeCentroids gets centroids by finding all the data points for each centroid and getting the mean of all  
 5. the assignmment step and update step, both,   repeat 10 iterations until it finds the final IDX vector corresponding to final K clusters
 6. the final X_compressed matrix has [n x 1] dimensions where n is the number of pixels in the image.  Note that this matrix has the same size for any clusters, the difference is just the numbers on it. For example, if there is a 16 cluster group, there will be just 16 values on the matrix. The way to check is by using unique(X) where X is the compressed matrix.
@@ -40,6 +40,9 @@ Observations
 Conclusions:
 1. the 32 cluster picture is very similar to the original and has almost half the size in kbytes, the 16, 8 and 4 cluster images, are not so clear and the sizes are very similar to the 32 cluster picture.
 2. With this particular image, the correct cluster to compress the size in almost half of the original is a 32 cluster grouping.
+3. in k-means cluster compression there is always a picture degradation and is necesary find the best compression with the least degradation.
+
+Second Approach: use 
 
 
 
