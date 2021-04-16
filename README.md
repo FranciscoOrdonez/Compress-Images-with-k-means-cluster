@@ -4,7 +4,7 @@ With the high demand on pictures through the internet, there is a need to compre
 Image Compression with k-means cluster is a way to compress an image from a 24 bit color presentation to a N bit for a 2^n color cluster.  Images comes with an RGB encoding that has 3 - 8 bit unsigned integer, from 0 to 255, which specifies red, green and blue intensity values.  The matrix for an RGB encoding is M(lines) x N(columns)  x 3(three color intensity).  Every pixel is a data example, so, for example, in a picture with 128 x 128 there is 16284 pixel, and each pixel has a three - 8 bit integer representing the colors.
 With k-means algorithm, we could compress to into a N bit color that best group(cluster) the pixels for quality compressed images.  
 
-In this project, We will analyze two different algorithms for compressing images and, finally, demostrate the use of  scatter3 function, which plots in three dimensions the red-green-blue image color intensity. 
+The project analyze two  two different algorithms for compressing images and also demostrates the use of  scatter3 function, which plots in three dimensions the red-green-blue image color intensity. 
 
 Approach:
 
@@ -88,6 +88,12 @@ Observations of comparison:
 Conclusion of differences in k-means clustering between Stanford coding and kmeans Matlab function
 
 The Stanford coding for compressing images with  k-means clustering has much better results in quality, size and time to process than  kmeans Matlab function.
+
+Scatter3 function
+The Scatter3 function creates a plot in three dimensions that shows each pixel or data point in the image with its  three (red, green, blue) color intensity. It is a good way to see the distribution of color of an image. The ilustriations below shows a tree image, the cluster or the K value, and the scatter3 plot. 
+
+Original Picture
+
 
 
 
