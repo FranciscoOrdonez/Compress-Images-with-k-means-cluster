@@ -4,7 +4,7 @@ With the high demand on pictures through the internet, there is a need to compre
 Image Compression with k-means cluster is a way to compress an image from a 24 bit color presentation to a N bit for a 2^n color cluster.  Images comes with an RGB encoding that has 3 - 8 bit unsigned integer, from 0 to 255, which specifies red, green and blue intensity values.  The matrix for an RGB encoding is M(lines) x N(columns)  x 3(three color intensity).  Every pixel is a data example, so, for example, in a picture with 128 x 128 there is 16284 pixel, and each pixel has a three - 8 bit integer representing the colors.
 The best way to graph an image  RGB encoding is by using the function scatter3 from Matlab.  The picture below is a tree with a x b pixels, each pixel has 3 numbers, from 1 to 256 and  each number represent the intensity of colors read, green and blue. The left image is a tree and the right image is the scatter3 graph representing the color distribution of the tree:
 
-<img src="https://user-images.githubusercontent.com/53232113/115056922-0413cc00-9ea9-11eb-9453-ebb2c7b699b0.jpg" width="300" height="300"><img src="https://user-images.githubusercontent.com/53232113/115057013-21489a80-9ea9-11eb-8634-fb6734f6f7a9.jpg" width="300" height="300">
+<img src="https://user-images.githubusercontent.com/53232113/115056922-0413cc00-9ea9-11eb-9453-ebb2c7b699b0.jpg" width="300" height="300">                 <img src="https://user-images.githubusercontent.com/53232113/115057013-21489a80-9ea9-11eb-8634-fb6734f6f7a9.jpg" width="300" height="300">
 
 
 With k-means algorithm, we could compress to into a N bit color that best group(cluster) the pixels for quality compressed images.  
