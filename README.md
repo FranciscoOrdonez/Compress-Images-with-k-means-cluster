@@ -25,7 +25,7 @@ First Approach: Coursera Stanford Machine Learning by Andrew Ng code with some c
 12. Do steps from 1 to 11 with cluster = 4,8,16,32
 13. show images: original and compare with 32 centroids, 16 centroids, 8 centroids, and 4 centroids cluster images.
 
-Here, there are five pictures from left to right> original, 32, 16 ,8 and 4 compress cluster images:
+Here, there are five pictures from left to right: original, 32, 16 ,8 and 4 compress cluster images:
 
 <img src="https://user-images.githubusercontent.com/53232113/114751253-87eb7e00-9d1a-11eb-846d-c2312a78d2e4.JPG"  width="200" height="280"> <img src="https://user-images.githubusercontent.com/53232113/114776216-d9eecc80-9d37-11eb-9f64-04a24b9f5c20.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114785729-b67d4f00-9d42-11eb-9d20-107e708ea9b6.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114786526-dd885080-9d43-11eb-9adc-27c60c3cbb63.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114788600-5dfc8080-9d47-11eb-9087-b7127815f5b2.jpg" width="200" height="280">
 <img src="https://user-images.githubusercontent.com/53232113/114796500-bd15c180-9d56-11eb-91d9-4b479d9f8ec9.jpg" width="1000" height="100">
