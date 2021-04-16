@@ -71,14 +71,14 @@ Here, there are five pictures from left to right> original, 32, 16 ,8 and 4 comp
 <img src="https://user-images.githubusercontent.com/53232113/114957256-45af6300-9e26-11eb-8c6e-0c4f270ff63c.jpg" width="1000" height="100">
 
 Observations:
-1.- the kmeans function used has 10 replicates and 10 maximun iteration. 
+1. the kmeans function used has 10 replicates and 10 maximun iteration. 
 2. the time to process is between two minutes and ten minutes.
 
 Conclusions:
-1.- Best compression with K = 32, decreases size from 2689 to 1893, 42 %.
-2.- K = 32 is the best quality picture compared with the original.
-3.- k = 16 or less: there is an important degradation in the images.
-4.- kmeans algorithm is slow.
+1. Best compression with K = 32, decreases size from 2689 to 1893, 42 %.
+2. K = 32 is the best quality picture compared with the original.
+3. k = 16 or less: there is an important degradation in the images.
+4. kmeans algorithm is slow.
 
 Differences in quality pictures between two approaches(top is Stanford codign and botton is kmeans Matlab function):
 <img src="https://user-images.githubusercontent.com/53232113/114751253-87eb7e00-9d1a-11eb-846d-c2312a78d2e4.JPG"  width="200" height="280"> <img src="https://user-images.githubusercontent.com/53232113/114776216-d9eecc80-9d37-11eb-9f64-04a24b9f5c20.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114785729-b67d4f00-9d42-11eb-9d20-107e708ea9b6.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114786526-dd885080-9d43-11eb-9adc-27c60c3cbb63.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114788600-5dfc8080-9d47-11eb-9087-b7127815f5b2.jpg" width="200" height="280">
