@@ -98,7 +98,7 @@ The Stanford coding for compressing images with  k-means clustering has much bet
 
 Scatter3 function
 
-The Scatter3 function ([Scatter3Coding](compressImageCoding/scatter/scatter3Coding) creates a plot in three dimensions that shows each pixel or data point in the image with its  three (red, green, blue) color intensity. It is a good way to see the distribution of color of an image. The ilustriations below shows how this scatter3 image changes in an original and compress images(8 cluster and 2 cluster): 
+The Scatter3 function ([Scatter3Coding])(compressImageCoding/scatter/scatter3Coding) creates a plot in three dimensions that shows each pixel or data point in the image with its  three (red, green, blue) color intensity. It is a good way to see the distribution of color of an image. The ilustriations below shows how this scatter3 image changes in an original and compress images(8 cluster and 2 cluster): 
 
 <img src="https://user-images.githubusercontent.com/53232113/115056922-0413cc00-9ea9-11eb-9453-ebb2c7b699b0.jpg" width="150" height="150"><img src="https://user-images.githubusercontent.com/53232113/115057013-21489a80-9ea9-11eb-8634-fb6734f6f7a9.jpg" width="170" height="200"><img src="https://user-images.githubusercontent.com/53232113/115057052-302f4d00-9ea9-11eb-815c-b4d629e99bf8.jpg" width="170" height="200"><img src="https://user-images.githubusercontent.com/53232113/115057100-40dfc300-9ea9-11eb-940b-25e0a69f6fb8.jpg" width="170" height="200"><img src="https://user-images.githubusercontent.com/53232113/115057158-5228cf80-9ea9-11eb-8cdd-f084b898cc53.jpg" width="170" height="200"><img src="https://user-images.githubusercontent.com/53232113/115057214-64a30900-9ea9-11eb-8c9d-c72c60b03da9.jpg" width="170" height="200">
 
