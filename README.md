@@ -58,7 +58,7 @@ Second Approach: use kmeans, a Matlab internal function, for image compression
 
 Note that the kmeans function used has 10 replicates and 10 maximun iteration. Here, there are five pictures from left to right> original, 32, 16 ,8 and 4 compress cluster images using kmean: 
 
-@<img src="https://user-images.githubusercontent.com/53232113/114751253-87eb7e00-9d1a-11eb-846d-c2312a78d2e4.JPG"  width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955593-a341b080-9e22-11eb-97b3-86aaf53923e6.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955648-c3716f80-9e22-11eb-8cdd-6e019967e471.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955682-d5531280-9e22-11eb-864e-1a21d21d656a.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955712-e439c500-9e22-11eb-9aed-074989e24d1e.jpg" width="200" height="280">
+<img src="https://user-images.githubusercontent.com/53232113/114751253-87eb7e00-9d1a-11eb-846d-c2312a78d2e4.JPG"  width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955593-a341b080-9e22-11eb-97b3-86aaf53923e6.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955648-c3716f80-9e22-11eb-8cdd-6e019967e471.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955682-d5531280-9e22-11eb-864e-1a21d21d656a.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955712-e439c500-9e22-11eb-9aed-074989e24d1e.jpg" width="200" height="280">
 
 
 
