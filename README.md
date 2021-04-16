@@ -8,7 +8,7 @@ In this project, We will analyze two different algorithms for compressing images
 
 Approach:
 
-We are using two approaches for compression, one with Coursera Standord Machine Learning Andrew Ng course code with some changes and other using kmeans, a Matlab internal functions.  Both approaches get a similar picture quality.  
+We are using two approaches for compression, one with Coursera Standord Machine Learning Andrew Ng course code with some changes and other using kmeans, a Matlab internal functions.  This project compares the quality of images between these two approaches.
 
 First Approach: Coursera Stanford Machine Learning by Andrew Ng code with some changes:
 1. load image into an 3 dimensional  array (example: 2448 x 3264 x 3)
@@ -56,7 +56,7 @@ Second Approach: use kmeans, a Matlab internal function, for image compression
 8. Do steps from 1 to 7 with cluster = 4,8,16,32
 14. show images: original and compare with 32 centroids, 16 centroids, 8 centroids, and 4 centroids cluster images.
 
-Use 
+Note that the kmeans function used has 10 replicates and 10 maximun iteration. Here, there are five pictures from left to right> original, 32, 16 ,8 and 4 compress cluster images using kmean: 
 
 
 
@@ -67,7 +67,13 @@ Use
 
 
 
+Differences in quality pictures between two approaches:
 
+pictures
+
+1. on first approach with modified Stanford code there is no replicates and 10 iterations, and on the second approach with kmeans function there are 10 replicates and 10 iterations.
+2. Compressed pictures with Stanford code have much better quality than compressed pictures with kmeans function
+3. 
 
 
 
