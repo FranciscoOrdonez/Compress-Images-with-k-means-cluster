@@ -98,7 +98,7 @@ The Stanford coding for compressing images with  k-means clustering has much bet
 
 Scatter3 function
 
-The Scatter3 function [Scatter3Coding](compressImageCoding/scatter/scatter3Coding) creates a plot in three dimensions that shows each pixel or data point in the image with its  three (red, green, blue) color intensity. It is a good way to see the distribution of color of an image. The ilustriations below shows how this scatter3 image changes in an original and compress images(8 cluster and 2 cluster): 
+The Scatter3 function [Scatter3Coding](compressImageCoding/scatter/scatter3Coding) creates a plot in three dimensions that shows each pixel or data point in the image with its  three (red, green, blue) color intensity. It is a good way to see the distribution of color of an image. In pictures with more than 1000000 pixels, this function is slow and takes up to ten minutes, and if there is more than 7 millon pixels, the matlab environment collapses with internal error messages.   The tree image used has 76800 pixels and the time to create the scatter3 plot is between 30-45 seconds.  The ilustriations below shows how this scatter3 image changes in an original and compress images(8 cluster and 2 cluster): 
 
 <img src="https://user-images.githubusercontent.com/53232113/115056922-0413cc00-9ea9-11eb-9453-ebb2c7b699b0.jpg" width="150" height="150"><img src="https://user-images.githubusercontent.com/53232113/115057013-21489a80-9ea9-11eb-8634-fb6734f6f7a9.jpg" width="170" height="200"><img src="https://user-images.githubusercontent.com/53232113/115057052-302f4d00-9ea9-11eb-815c-b4d629e99bf8.jpg" width="170" height="200"><img src="https://user-images.githubusercontent.com/53232113/115057100-40dfc300-9ea9-11eb-940b-25e0a69f6fb8.jpg" width="170" height="200"><img src="https://user-images.githubusercontent.com/53232113/115057158-5228cf80-9ea9-11eb-8cdd-f084b898cc53.jpg" width="170" height="200"><img src="https://user-images.githubusercontent.com/53232113/115057214-64a30900-9ea9-11eb-8c9d-c72c60b03da9.jpg" width="170" height="200">
 
@@ -107,6 +107,11 @@ On the 8-cluster image the color intensity on green is between 0-100, on red bet
 On the 2-cluster image the color intensity on green is betwwen 0-100, on red between 0-100 and on blue between 0-300.
 
 On the original picture there is a wide range in red, on the 8 cluster picture there is thin range on green and red and on the 2 cluster picture thre is thin range on green and red and wide range in blue.
+
+CONCLUSION
+
+The Stanford coding for compressing images with  k-means clustering has much better results in quality, size and time to process than  kmeans Matlab function and, the scatter3 function gives a great ilustration of the  color distribution on an image, eventhough the function is slow for more than one millon pixels pictures.
+
 
 
 
