@@ -61,23 +61,25 @@ Note that the kmeans function used has 10 replicates and 10 maximun iteration. H
 <img src="https://user-images.githubusercontent.com/53232113/114751253-87eb7e00-9d1a-11eb-846d-c2312a78d2e4.JPG"  width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955593-a341b080-9e22-11eb-97b3-86aaf53923e6.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955648-c3716f80-9e22-11eb-8cdd-6e019967e471.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955682-d5531280-9e22-11eb-864e-1a21d21d656a.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955712-e439c500-9e22-11eb-9aed-074989e24d1e.jpg" width="200" height="280">
 <img src="https://user-images.githubusercontent.com/53232113/114957256-45af6300-9e26-11eb-8c6e-0c4f270ff63c.jpg" width="1000" height="100">
 
-
-
-
-
-
-
-
-
+Conclusions:
+1.- Best compression with K = 32, decreases size from 2689 to 1893, 42 %.
+2.- K = 32 is the best quality picture compared with the original
+3.- k = 16 or less: there is an important degradation in the images.
 
 
 Differences in quality pictures between two approaches:
+With Stanford coding:
+<img src="https://user-images.githubusercontent.com/53232113/114751253-87eb7e00-9d1a-11eb-846d-c2312a78d2e4.JPG"  width="200" height="280"> <img src="https://user-images.githubusercontent.com/53232113/114776216-d9eecc80-9d37-11eb-9f64-04a24b9f5c20.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114785729-b67d4f00-9d42-11eb-9d20-107e708ea9b6.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114786526-dd885080-9d43-11eb-9adc-27c60c3cbb63.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114788600-5dfc8080-9d47-11eb-9087-b7127815f5b2.jpg" width="200" height="280">
+<img src="https://user-images.githubusercontent.com/53232113/114796500-bd15c180-9d56-11eb-91d9-4b479d9f8ec9.jpg" width="1000" height="100">
 
-pictures
+With kmeans function:
+<img src="https://user-images.githubusercontent.com/53232113/114751253-87eb7e00-9d1a-11eb-846d-c2312a78d2e4.JPG"  width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955593-a341b080-9e22-11eb-97b3-86aaf53923e6.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955648-c3716f80-9e22-11eb-8cdd-6e019967e471.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955682-d5531280-9e22-11eb-864e-1a21d21d656a.jpg" width="200" height="280"><img src="https://user-images.githubusercontent.com/53232113/114955712-e439c500-9e22-11eb-9aed-074989e24d1e.jpg" width="200" height="280">
+<img src="https://user-images.githubusercontent.com/53232113/114957256-45af6300-9e26-11eb-8c6e-0c4f270ff63c.jpg" width="1000" height="100">
 
+Observations of comparison:
 1. on first approach with modified Stanford code there is no replicates and 10 iterations, and on the second approach with kmeans function there are 10 replicates and 10 iterations.
-2. Compressed pictures with Stanford code have much better quality than compressed pictures with kmeans function
-3. 
+2. Compressed pictures with Stanford code have much better quality than compressed pictures with kmeans function.
+3. In Standord coding the best quality picture is with K=32 with a decrease of size 
 
 
 
