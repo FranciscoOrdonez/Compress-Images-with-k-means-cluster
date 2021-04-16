@@ -1,0 +1,10 @@
+clear;
+%get A as a m x n x 3 uint8 image array
+A = imread('tree.jpg'); % A is a 128x128x3 uint8 image array
+
+%change to an X matrix two dimensiones M x 3, where M = m x n
+X = double(reshape(A(:),length(A(:))/3,3)); 
+
+%plot three dimension color intensity diagram
+scatter3(X(:,1),X(:,2),X(:,3),12,X/255,'filled');
+xlabel('Red'); ylabel('Green'); zlabel('Blue')
