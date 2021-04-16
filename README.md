@@ -11,7 +11,7 @@ As seen, the intensity goes more to the color red(1-200) and blue(0-300) than th
 
 With k-means algorithm, we could compress to into a N bit color that best group(cluster) the pixels for quality compressed images.  
 
-The project analyze two  two different algorithms for compressing images and also show the three dimensional distribution of scatter3 function in original, eight and two cluster images. 
+The project analyzes two  different algorithms for compressing images and also shows the three dimensional distribution of scatter3 function in original, eight and two cluster images. 
 
 Approach:
 
@@ -21,7 +21,7 @@ First Approach: Coursera Stanford Machine Learning by Andrew Ng code with some c
 1. load image into an 3 dimensional  array (example: 2448 x 3264 x 3)
 2. reshape into a 2 dimension array (example (7990272 x 3)
 3. make array values from 0 to 1, dividing by 256 on the image structure
-4. random initiatization of initial centroids(clusters of groups)................................ steps 1-4:  initCompress(see compressImageCoding)
+4. random initiatization of initial centroids(clusters of groups)................................ steps 1-4:  [initCompress](compressImageCoding/initCompress)
 5. make a loop from 1 to maximum iterations you want (example = 10):
 6. ------create vector m x 1 where m is the number of pixels, to assign each pixel to closest centroid
 7. ------calculate new centroids (clusters or groups) with vector on 6 above..................... steps 5=7:  CentroidLoop(see compressImageCoding)  .
