@@ -24,11 +24,11 @@ First Approach: Coursera Stanford Machine Learning by Andrew Ng code with some c
 4. random initiatization of initial centroids(clusters of groups)................................ steps 1-4:  [initCompress](compressImageCoding/initCompress)
 5. make a loop from 1 to maximum iterations you want (example = 10):
 6. ------create vector m x 1 where m is the number of pixels, to assign each pixel to closest centroid
-7. ------calculate new centroids (clusters or groups) with vector on 6 above..................... steps 5=7:  CentroidLoop(see compressImageCoding)  .
-8. find final centroid assigmments, vector m x 1  ................................................   step 8:  findClosestCentroid(see CompressImageCoding)
+7. ------calculate new centroids (clusters or groups) with vector on 6 above..................... steps 5=7:  [CentroidLoop](compressImageCoding/centroidLoop)
+8. find final centroid assigmments, vector m x 1  ................................................   step 8:  [findClosestCentroid](compressImageCoding/findClosestCentroid)
 9. reconstruct the image based on final centroid assigment on 8 above
 10. convert recovered image into initial dimensions (example: from 7990272 x 3   to 2448 x 3264 x 3)
-11. save image, write into disk and show image  .................................................. steps 9-11 writeImageFile(see CompressImageCoding)
+11. save image, write into disk and show image  .................................................. steps 9-11 [writeImageFile](compressImageCoding/writeImageFile)
 12. Do steps from 1 to 11 with cluster = 4,8,16,32
 13. show images: original and compare with 32 centroids, 16 centroids, 8 centroids, and 4 centroids cluster images.
 
@@ -61,7 +61,7 @@ Second Approach: use kmeans, a Matlab internal function, for image compression
 4. initialize k=number of cluster, number of replicates until finding the best cluster
 5. use kmeans function and get as output the assignment vector idx and the centroid values
 6. convert recovered image into initial dimensions (example: from 7990272 x 3   to 2448 x 3264 x 3)
-7. save image, write into disk and show image
+7. save image, write into disk and show image ............................................ steps 1 to 7 in [kMeansApproach](compressImageCoding/KmeansApproach)
 8. Do steps from 1 to 7 with cluster = 4,8,16,32
 14. show images: original and compare with 32 centroids, 16 centroids, 8 centroids, and 4 centroids cluster images.
 
@@ -98,7 +98,7 @@ The Stanford coding for compressing images with  k-means clustering has much bet
 
 Scatter3 function
 
-The Scatter3 function creates a plot in three dimensions that shows each pixel or data point in the image with its  three (red, green, blue) color intensity. It is a good way to see the distribution of color of an image. The ilustriations below shows how this scatter3 image changes in an original and compress images(8 cluster and 2 cluster): 
+The Scatter3 function ([Scatter3Coding](compressImageCoding/scatter/scatter3Coding) creates a plot in three dimensions that shows each pixel or data point in the image with its  three (red, green, blue) color intensity. It is a good way to see the distribution of color of an image. The ilustriations below shows how this scatter3 image changes in an original and compress images(8 cluster and 2 cluster): 
 
 <img src="https://user-images.githubusercontent.com/53232113/115056922-0413cc00-9ea9-11eb-9453-ebb2c7b699b0.jpg" width="150" height="150"><img src="https://user-images.githubusercontent.com/53232113/115057013-21489a80-9ea9-11eb-8634-fb6734f6f7a9.jpg" width="170" height="200"><img src="https://user-images.githubusercontent.com/53232113/115057052-302f4d00-9ea9-11eb-815c-b4d629e99bf8.jpg" width="170" height="200"><img src="https://user-images.githubusercontent.com/53232113/115057100-40dfc300-9ea9-11eb-940b-25e0a69f6fb8.jpg" width="170" height="200"><img src="https://user-images.githubusercontent.com/53232113/115057158-5228cf80-9ea9-11eb-8cdd-f084b898cc53.jpg" width="170" height="200"><img src="https://user-images.githubusercontent.com/53232113/115057214-64a30900-9ea9-11eb-8c9d-c72c60b03da9.jpg" width="170" height="200">
 
