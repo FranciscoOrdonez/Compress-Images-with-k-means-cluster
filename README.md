@@ -31,7 +31,7 @@ Here, there are five pictures from left to right> original, 32, 16 ,8 and 4 comp
 <img src="https://user-images.githubusercontent.com/53232113/114796500-bd15c180-9d56-11eb-91d9-4b479d9f8ec9.jpg" width="1000" height="100">
 
 Observations
-1. it is a pretty bix pixel picture with almost 8 millon pixels
+1. it is a pretty big pixel picture with almost 8 millon pixels
 2. for initial cluster it is used a randperm(m) function. This function gets a random number from 0 to m in the vector matrix, then gets the first K numbers. Every time the randperm function is run, gets different numbers.
 3. for each pixel, there is a IDX vector that point to the closest cluster centroids by finding all the data points for each centroid and getting the mean of all X data in ths cluster. This is the assignment step where each data point is assigned to a cluster whose center is nearest to it.
 4. to find a new K clusters, the routine computeCentroids gets centroids by finding all the data points for each centroid and getting the mean of all  
@@ -81,7 +81,15 @@ With kmeans function:
 Observations of comparison:
 1. on first approach with modified Stanford code there is no replicates and 10 iterations, and on the second approach with kmeans function there are 10 replicates and 10 iterations.
 2. Compressed pictures with Stanford code have much better quality than compressed pictures with kmeans function.
-3. In Standord coding the best quality picture is with K=32 with a decrease of size 
+3. In Stanford coding the best quality picture is with K=32 with a 49 percent decrease in image size.
+4. In Kmeans coding the best quality picture is with K=32 with a 42 percent decrease in image size, with a poor quality picture.
+
+Conclusion of differences in k-means clustering between Stanford coding and kmeans Matlab function
+
+The Stanford coding for compressing images with  k-means clustering has much better results in quality and size of compression than kmeans Matlab function.  
+
+6. 
+7. 
 
 
 
