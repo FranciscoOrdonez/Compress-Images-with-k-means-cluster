@@ -112,6 +112,8 @@ CONCLUSION
 
 The Stanford coding for compressing images with  k-means clustering has much better results in quality, size and time to process than  kmeans Matlab function and, the scatter3 function gives a great ilustration of the  color distribution on an image, eventhough the function is slow for more than one millon pixels pictures.
 
+Any comments I really appreciate on [twitter](https://twitter.com/OrdonezFordonez) or [linkedin](https://www.linkedin.com/in/francisco-ordonez-01514925)
+
 
 
 
