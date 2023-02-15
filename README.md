@@ -1,4 +1,7 @@
 # Compress-Images-with-k-means-cluster
+![114955712-e439c500-9e22-11eb-9aed-074989e24d1e](https://user-images.githubusercontent.com/53232113/219138996-1b121369-b18c-43c7-8b3a-4f65856b15d1.jpg)
+
+
 
 With the high demand on pictures through the internet, there is a need to compress pictures, so we can move them faster through our networks. There are various ways to compress pictures. In this project, we are using k-means, which is an unsupervised learning algorithm. There is more information available on k-means clustering in [Wikipedia](https://en.wikipedia.org/wiki/K-means_clustering).
 Image Compression with k-means cluster is a way to compress an image from a 24 bit color presentation to a N bit for a 2^n color cluster.  Images comes with an RGB encoding that has 3 - 8 bit unsigned integer, from 0 to 255, which specifies red, green and blue intensity values.  The matrix for an RGB encoding is M(lines) x N(columns)  x 3(three color intensity).  Every pixel is a data example, so, for example, in a picture with 128 x 128 there is 16284 pixel, and each pixel has a three - 8 bit integer representing the colors.
