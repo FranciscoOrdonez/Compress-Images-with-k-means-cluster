@@ -1,5 +1,5 @@
 # Compress-Images-with-k-means-cluster
-![114955712-e439c500-9e22-11eb-9aed-074989e24d1e](https://user-images.githubusercontent.com/53232113/219138996-1b121369-b18c-43c7-8b3a-4f65856b15d1.jpg)
+
 
 
 
